@@ -38,13 +38,13 @@ function viewCart() {
 }
 
 function total() {
-  var cartTotalMsg = ""
+  var cartTotalArray = []
   var sum = 0
   for (var i = 0; i < cart.length; i++) {
     sum += cart[i].itemPrice
-    cartTotalMsg += sum
+    cartTotalArray.push(sum)
   }
-  return cartTotalMsg
+  return cartTotalArray
 }
 
 function removeFromCart(item) {
