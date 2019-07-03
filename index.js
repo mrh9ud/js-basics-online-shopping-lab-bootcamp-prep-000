@@ -55,7 +55,7 @@ function removeFromCart(item) {
   }
   return "That item is not in your cart."
 }
-var total = function total();
+var total = total()
 
 function placeOrder(cardNumber) {
   if (cardNumber !== undefined) 
