@@ -27,9 +27,9 @@ function viewCart() {
       var cartMsg = "In your cart, you have"
       for (var i = 0; i < cart.length; i++) {
         if (i === 0)
-          msg += ` ${cart[i].itemName} at $${cart[i].itemPrice}`
+          cartMsg += ` ${cart[i].itemName} at $${cart[i].itemPrice}`
         else
-          msg += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+          cartMsg += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
     cartMsg += "."
     return cartMsg
