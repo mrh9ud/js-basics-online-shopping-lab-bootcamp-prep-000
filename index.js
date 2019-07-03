@@ -26,7 +26,7 @@ function viewCart() {
     else {
       var cartMsg = "In your cart, you have"
       for (var i = 0; i < cart.length; i++) {
-        
+        if (i === 0)
       }
     }
     
