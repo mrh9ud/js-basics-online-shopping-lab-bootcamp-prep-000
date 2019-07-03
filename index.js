@@ -57,7 +57,6 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-
   if (cardNumber !== undefined) 
 
     for (var i = 0; i < cart.length; i++) {
