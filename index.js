@@ -39,10 +39,11 @@ function viewCart() {
 
 function total() {
   var cartTotalMsg = ""
-  for (var i = 0; i < cart.length; i++){
+  for (var i = 0; i < cart.length; i++) {
+    if (i >= 0)
     cartTotalMsg += `${cart[i].itemPrice}`
   }
-return cartTotalMsg
+  return cartTotalMsg
 }
 
 function removeFromCart(item) {
