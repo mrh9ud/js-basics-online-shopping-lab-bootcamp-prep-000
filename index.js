@@ -31,7 +31,7 @@ function viewCart() {
         else
           msg += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
-    
+    cartMsg += "."
     }
     
 }
