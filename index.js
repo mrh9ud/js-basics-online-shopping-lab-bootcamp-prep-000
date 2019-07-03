@@ -31,10 +31,8 @@ function viewCart() {
           msg += `${cart[i].itemName} at $${cart[i].itemPrice}`
           }
         return `In your cart, you have ${newArray}.`
-        }
-    } else {
-        return 'Your shopping cart is empty.'
-    }
+
+}
 }
 
 function total() {
