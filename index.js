@@ -27,8 +27,9 @@ function viewCart() {
     if (cart.length !== 0) {
         var msg = "In your cart, you have"
         for (var i = 0; i < cart.length; i++) {
-          var itemPriceObj = cart[i];
+          if (i === 0) {
           msg += `${cart[i].itemName} at $${cart[i].itemPrice}`
+          }
         return `In your cart, you have ${newArray}.`
         }
     } else {
