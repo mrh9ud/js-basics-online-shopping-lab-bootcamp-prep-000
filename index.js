@@ -39,7 +39,7 @@ function viewCart() {
     
 }
 function total() {
-  cartTotalMsg = ""
+  var cartTotalMsg = ""
   for (var i = 0; i < cart.length; i++){
     cartTotalMsg += `${cart[i].itemPrice}`
   }
