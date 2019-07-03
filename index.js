@@ -41,6 +41,7 @@ function total() {
   var cartTotalArray = []
   var sum = 0
   for (var i = 0; i < cart.length; i++) {
+    if (i > 0)
     sum += cart[i].itemPrice
     cartTotalArray.push(sum)
   }
