@@ -51,7 +51,7 @@ function removeFromCart(item) {
     if (cart[i].hasOwnProperty(item))  
       cart.splice([i], 1)
  }
-  return cart
+    return cart
 }
 
 function placeOrder(cardNumber) {
