@@ -24,17 +24,8 @@ function viewCart() {
     if (cart.length === 0) {
       return "Your shopping cart is empty."
     }
-    if (cart.length !== 0) {
-        var msg = "In your cart, you have"
-        for (var i = 0; i < cart.length; i++) {
-          if (i === 0) {
-          msg += `${cart[i].itemName} at $${cart[i].itemPrice}`
-          }
-        return `In your cart, you have ${newArray}.`
-
+    
 }
-}
-
 function total() {
   // write your code here
 }
