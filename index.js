@@ -25,12 +25,12 @@ function viewCart() {
       return "Your shopping cart is empty."
     }
     if (cart.length !== 0) {
-        
+        msg = "In your cart, you have"
         for (var i = 0; i < cart.length; i++) {
           var itemPriceObj = cart[i];
-        }
-          newArray.push(`${cart[i].itemName} at \$${cart[i].itemPrice}`)
+          msg += `${cart[i].itemName} at $${cart[i].itemPrice}`
         return `In your cart, you have ${newArray}.`
+        }
     } else {
         return 'Your shopping cart is empty.'
     }
