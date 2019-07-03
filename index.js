@@ -41,7 +41,8 @@ function total() {
   var cartTotalMsg = ""
   var sum = 0
   for (var i = 0; i < cart.length; i++) {
-    sum(cart[i].itemPrice)
+    sum += cart[i].itemPrice
+    cartTotalMsg += sum
   }
   return cartTotalMsg
 }
