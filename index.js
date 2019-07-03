@@ -21,8 +21,11 @@ function addToCart(item) {
 
 /*(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`)*/
 function viewCart() {
+    if (cart.length === 0) {
+      return "Your shopping cart is empty."
+    }
     if (cart.length !== 0) {
-        var newArray = [];
+        
         for (var i = 0; i < cart.length; i++) {
           var itemPriceObj = cart[i];
         }
