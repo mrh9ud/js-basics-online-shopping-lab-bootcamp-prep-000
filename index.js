@@ -19,7 +19,6 @@ function addToCart(item) {
   return `${item} has been added to your cart.`
 }
 
-/*(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`)*/
 function viewCart() {
     if (cart.length === 0) 
       return "Your shopping cart is empty."
@@ -36,14 +35,14 @@ function viewCart() {
     cartMsg += "."
     return cartMsg
     }
-    
 }
+
 function total() {
   var cartTotalMsg = ""
   for (var i = 0; i < cart.length; i++){
     cartTotalMsg += `${cart[i].itemPrice}`
   }
-  return cartTotalMsg
+return cartTotalMsg
 }
 
 function removeFromCart(item) {
