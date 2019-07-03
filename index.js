@@ -40,9 +40,8 @@ function viewCart() {
 function total() {
   var total = 0
   for (var i = 0; i < cart.length; i++) {
-    if (i > 0)
+    if (i cart.length > 0)
     total += cart[i].itemPrice
-    cartTotalArray.push(sum)
   }
   return cartTotalArray
 }
